@@ -8,8 +8,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:text="Reset"
-        local:MvxBind="Click ScanCommand" />
+        local:MvxBind="Text ScanLabel; Click ScanCommand" />
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
