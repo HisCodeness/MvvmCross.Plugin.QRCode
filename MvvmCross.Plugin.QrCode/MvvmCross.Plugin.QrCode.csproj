@@ -6,6 +6,12 @@
   <PropertyGroup>
     <PackageTargetFallback>portable-net45+win8+wpa81</PackageTargetFallback>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>D:\Sources\GIT\MvxQrCode\MvvmCross.Plugin.QrCode\MvvmCross.Plugin.QrCode.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>D:\Sources\GIT\MvxQrCode\MvvmCross.Plugin.QrCode\MvvmCross.Plugin.QrCode.xml</DocumentationFile>
+  </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="MvvmCross.Platform" Version="5.3.2" />
     <PackageReference Include="ZXing.Net.Mobile" Version="2.4.1" />

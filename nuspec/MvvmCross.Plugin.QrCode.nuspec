@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+  <metadata>
+    <id>Mvx.Plugin.QrCode</id>
+    <version>5.2.3-alpha</version>
+    <title>MvvmCross.Plugin.QRCode</title>
+    <authors>HisCodeness</authors>
+    <owners>HisCodeness</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/HisCodeness/MvvmCross.Plugin.QRCode/</projectUrl>
+    <description>MvvmCross plugin to scan QR Code or barcode</description>
+    <summary>MvvmCross plugin to scan QR Code or barcode</summary>
+    <releaseNotes>First release, only for Android</releaseNotes>
+    <copyright>Copyright 2019</copyright>
+    <tags>mvvmcross plugin qrcode barcode xamarin android monodroid xamarin.android</tags>
+    <dependencies>
+      <group>
+        <!-- Always include regardless of target framework -->
+        <dependency id="MvvmCross.Platform" version="5.2.3" />
+        <dependency id="ZXing.Net.Mobile" version="2.4.1" />
+      </group>
+    </dependencies>  
+  </metadata>
+  <files>     
+    <!-- ALL -->
+    <file src="..\MvvmCross.Plugin.QrCode\bin\Release\netstandard1.1\MvvmCross.Plugin.QrCode.dll" target="lib\portable-net45+sl5+wp8+wpa81+win8+monoandroid+monotouch+netstandard1.0" />
+    <file src="..\MvvmCross.Plugin.QrCode\bin\Release\netstandard1.1\MvvmCross.Plugin.QrCode.xml" target="lib\portable-net45+sl5+wp8+wpa81+win8+monoandroid+monotouch+netstandard1.0" />
+          		
+    <!-- Android -->
+    <file src="..\MvvmCross.Plugin.QrCode\bin\Release\netstandard1.1\MvvmCross.Plugin.QrCode.dll" target="lib\monoandroid" />
+    <file src="..\MvvmCross.Plugin.QrCode\bin\Release\netstandard1.1\MvvmCross.Plugin.QrCode.xml" target="lib\monoandroid" />    
+    <file src="..\MvvmCross.Plugin.QrCode.Android\bin\Release\MvvmCross.Plugin.QrCode.Android.dll" target="lib\monoandroid" />
+		<file src="BootstrapContent\MvxQrCodePluginBootstrap.Android.cs.pp" target="content\monoandroid\Bootstrap\MvxQrCodePluginBootstrap.cs.pp" />
+		
+    <!-- iOS -->
+    <!-- <file src="..\.dll" target="lib\monotouch" /> 
+    <file src="..\.xml" target="lib\monotouch" /> 
+    <file src="..\.dll" target="lib\monotouch" />
+		<file src="BootstrapContent\MvxQrCodePluginBootstrap.iOS.cs.pp" target="content\monotouch\Bootstrap\MvxQrCodePluginBootstrap.cs.pp" /> -->
+  </files>
+</package>
