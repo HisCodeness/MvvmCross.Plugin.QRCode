@@ -1,4 +1,6 @@
-﻿using MvvmCross.Core.ViewModels;
+﻿using System;
+using System.Threading.Tasks;
+using MvvmCross.Core.ViewModels;
 using MvvmCross.Plugin.QrCode;
 
 namespace MvxQrCode.Core.ViewModels
@@ -17,6 +19,11 @@ namespace MvxQrCode.Core.ViewModels
         /// Result
         /// </summary>
         private string text = "Result will be displayed here";
+
+        /// <summary>
+        /// Scan label
+        /// </summary>
+        public string ScanLabel { get { return "Scan"; } }
 
         /// <summary>
         /// Result
@@ -39,15 +46,31 @@ namespace MvxQrCode.Core.ViewModels
         /// <summary>
         /// Scan command
         /// </summary>
-        public IMvxCommand ScanCommand => new MvxCommand(ScanCommandExecute);
+        public IMvxAsyncCommand ScanCommand => new MvxAsyncCommand(ScanCommandExecute);
 
         /// <summary>
         /// Scan command execute
         /// </summary>
-        private void ScanCommandExecute()
+        private async Task ScanCommandExecute()
         {
-            // TODO call IMvxQrCode
-            Result = mvxQrCode.Scan();
+            var scanResult = await mvxQrCode.Scan("Hold the camera up to the barcode\nAbout 15 cm away",
+                                    "The barcode will be automatically scanned",
+                                    "Your camera doesn't support barcode scanning");
+
+            switch (scanResult.ScanStatus)
+            {
+                case ScanStatus.Success:
+                    Result = scanResult.Result.Text;
+                    break;
+                case ScanStatus.Canceled:
+                    Result = "Scan canceled";
+                    break;
+                case ScanStatus.Error:
+                    Result = scanResult.Exception.Message;
+                    break;
+                default:
+                    throw new NotImplementedException();
+            }
         }
     }
 }
