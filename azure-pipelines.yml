@@ -26,8 +26,8 @@ steps:
     rootFolder: '$(Build.SourcesDirectory)'
     filePattern: 'AssemblyInfo.cs'
     assemblyCopyright: 'Copyright © 2020'
-    assemblyVersion: '1.0.0'
-    assemblyFileVersion: '$assemblyVersion'
+    assemblyVersion: '$($assemblyVersion)'
+    assemblyFileVersion: '$($assemblyVersion)'
 
 - task: SonarCloudPrepare@1
   inputs:
