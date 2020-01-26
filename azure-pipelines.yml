@@ -21,6 +21,15 @@ steps:
   inputs:
     restoreSolution: '$(solution)'
 
+- task: SonarCloudPrepare@1
+  inputs:
+    SonarCloud: 'Sonar cloud'
+    organization: 'hiscodeness'
+    scannerMode: 'MSBuild'
+    projectKey: 'MvvmCross.Plugin.QRCode'
+    projectName: 'MvvmCross.Plugin.QRCode'
+    projectVersion: '$(version)'
+
 - task: VSBuild@1
   inputs:
     solution: '$(solution)'
@@ -31,3 +40,23 @@ steps:
   inputs:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
+
+- task: SonarCloudAnalyze@1
+
+- task: SonarCloudPublish@1
+  inputs:
+    pollingTimeoutSec: '300'
+
+- task: NuGetCommand@2
+  inputs:
+    command: 'pack'
+    packagesToPack: 'nuspec/MvvmCross.Plugin.QrCode.nuspec'
+    versioningScheme: 'byEnvVar'
+    versionEnvVar: 'version'
+
+- task: NuGetCommand@2
+  inputs:
+    command: 'push'
+    packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg;!$(Build.ArtifactStagingDirectory)/**/*.symbols.nupkg'
+    nuGetFeedType: 'internal'
+    publishVstsFeed: 'f7a21e99-8ece-4fe4-b891-7f6ce41e96d7'
