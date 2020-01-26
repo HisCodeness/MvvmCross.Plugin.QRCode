@@ -11,7 +11,7 @@
     <projectUrl>https://github.com/HisCodeness/MvvmCross.Plugin.QRCode/</projectUrl>
     <description>MvvmCross plugin to scan QR Code or barcode</description>
     <summary>MvvmCross plugin to scan QR Code or barcode</summary>
-    <releaseNotes>First release, only for Android</releaseNotes>
+    <releaseNotes>First release, Android and iOS preview</releaseNotes>
     <copyright>Copyright 2019</copyright>
     <tags>mvvmcross plugin qrcode barcode xamarin android monodroid xamarin.android</tags>
     <dependencies>
