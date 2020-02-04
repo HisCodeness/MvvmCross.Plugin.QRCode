@@ -41,7 +41,8 @@ namespace MvvmCross.Plugin.QrCode.Android
 
             try
             {
-                var options = new ZXing.Mobile.MobileBarcodeScanningOptions()
+                // Add option for use correct resolution for mobile
+                var options = new MobileBarcodeScanningOptions()
                 {
                     CameraResolutionSelector = new CameraResolutionSelectorDelegate(ResolutionSelector)
                 };
