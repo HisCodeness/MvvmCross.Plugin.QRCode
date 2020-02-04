@@ -34,9 +34,9 @@
 		<file src="BootstrapContent\MvxQrCodePluginBootstrap.Android.cs.pp" target="content\monoandroid\Bootstrap\MvxQrCodePluginBootstrap.cs.pp" />
 		
     <!-- iOS -->
-     <file src="..\MvvmCross.Plugin.QrCode\bin\Release\netstandard1.1\MvvmCross.Plugin.QrCode.dll" target="lib\monotouch" /> 
-    <file src="..\MvvmCross.Plugin.QrCode\bin\Release\netstandard1.1\MvvmCross.Plugin.QrCode.xml" target="lib\monotouch" /> 
-    <file src="..\MvvmCross.Plugin.QrCode.iOS\bin\Release\MvvmCross.Plugin.QrCode.iOS.dll" target="lib\monotouch" />
-		<file src="BootstrapContent\MvxQrCodePluginBootstrap.iOS.cs.pp" target="content\monotouch\Bootstrap\MvxQrCodePluginBootstrap.cs.pp" />
+     <file src="..\MvvmCross.Plugin.QrCode\bin\Release\netstandard1.1\MvvmCross.Plugin.QrCode.dll" target="lib\Xamarin.iOS10" /> 
+    <file src="..\MvvmCross.Plugin.QrCode\bin\Release\netstandard1.1\MvvmCross.Plugin.QrCode.xml" target="lib\Xamarin.iOS10" /> 
+    <file src="..\MvvmCross.Plugin.QrCode.iOS\bin\Release\MvvmCross.Plugin.QrCode.iOS.dll" target="lib\Xamarin.iOS10" />
+		<file src="BootstrapContent\MvxQrCodePluginBootstrap.iOS.cs.pp" target="content\Xamarin.iOS10\Bootstrap\MvxQrCodePluginBootstrap.cs.pp" />
   </files>
 </package>
