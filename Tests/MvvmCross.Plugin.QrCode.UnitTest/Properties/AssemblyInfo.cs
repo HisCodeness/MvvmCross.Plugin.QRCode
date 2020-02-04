@@ -1,5 +1,4 @@
 using System.Reflection;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 [assembly: AssemblyTitle("MvvmCross.Plugin.QrCode.UnitTest")]
@@ -16,5 +15,5 @@ using System.Runtime.InteropServices;
 [assembly: Guid("dc3eb5f4-897f-40a5-a13a-8ffa7592a5ad")]
 
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyVersion("5.3.2.0")]
+[assembly: AssemblyFileVersion("5.3.2.0")]
