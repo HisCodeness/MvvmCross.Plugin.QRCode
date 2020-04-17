@@ -17,15 +17,15 @@
     <dependencies>
       <group>
         <!-- Always include regardless of target framework -->
-        <dependency id="MvvmCross.Platform" version="6.4.2" />
+        <dependency id="MvvmCross" version="6.4.2" />
         <dependency id="ZXing.Net.Mobile" version="2.4.1" />
       </group>
     </dependencies>  
   </metadata>
   <files>     
     <!-- ALL -->
-    <file src="..\MvvmCross.Plugin.QrCode\bin\Release\netstandard2.0\MvvmCross.Plugin.QrCode.dll" target="lib\portable-net45+sl5+wp8+wpa81+win8+monoandroid+monotouch+netstandard1.0" />
-    <file src="..\MvvmCross.Plugin.QrCode\bin\Release\netstandard2.0\MvvmCross.Plugin.QrCode.xml" target="lib\portable-net45+sl5+wp8+wpa81+win8+monoandroid+monotouch+netstandard1.0" />
+    <file src="..\MvvmCross.Plugin.QrCode\bin\Release\netstandard2.0\MvvmCross.Plugin.QrCode.dll" target="lib\netstandard2.0" />
+    <file src="..\MvvmCross.Plugin.QrCode\bin\Release\netstandard2.0\MvvmCross.Plugin.QrCode.xml" target="lib\netstandard2.0" />
           		
     <!-- Android -->
     <file src="..\MvvmCross.Plugin.QrCode\bin\Release\netstandard2.0\MvvmCross.Plugin.QrCode.dll" target="lib\monoandroid" />
