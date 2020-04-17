@@ -21,6 +21,12 @@ steps:
   inputs:
     restoreSolution: '$(solution)'
 
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'restore'
+    feedsToUse: 'select'
+    vstsFeed: 'f7a21e99-8ece-4fe4-b891-7f6ce41e96d7'
+
 - task: Update AssemblyInfo@1
   inputs:
     rootFolder: '$(Build.SourcesDirectory)'
@@ -37,6 +43,15 @@ steps:
     projectKey: 'MvvmCross.Plugin.QRCode'
     projectName: 'MvvmCross.Plugin.QRCode'
     projectVersion: '$(version)'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
+    projects: '$(solution)'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'test'
 
 - task: VSBuild@1
   inputs:
