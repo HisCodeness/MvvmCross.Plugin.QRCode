@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Threading.Tasks;
-using MvvmCross.Core.ViewModels;
+using MvvmCross.Commands;
 using MvvmCross.Plugin.QrCode;
+using MvvmCross.ViewModels;
 
 namespace MvxQrCode.Core.ViewModels
 {

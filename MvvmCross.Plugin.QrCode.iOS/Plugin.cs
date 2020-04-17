@@ -1,11 +1,10 @@
-using MvvmCross.Platform;
-using MvvmCross.Platform.Plugins;
-
 namespace MvvmCross.Plugin.QrCode.iOS
 {
     /// <summary>
     /// Plugin
     /// </summary>
+    [MvxPlugin]
+    [Preserve(AllMembers = true)]
     public class Plugin : IMvxPlugin
     {
         /// <summary>
@@ -13,7 +12,7 @@ namespace MvvmCross.Plugin.QrCode.iOS
         /// </summary>
         public void Load()
         {
-            Mvx.RegisterSingleton<IMvxQrCode>(new MvxQrCode());
+            Mvx.IoCProvider.RegisterSingleton<IMvxQrCode>(new MvxQrCode());
         }
     }
 }

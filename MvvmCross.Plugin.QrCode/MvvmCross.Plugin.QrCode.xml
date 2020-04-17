@@ -41,21 +41,6 @@
             <param name="cameraUnsupportedMessage">Unsupported camera message</param>
             <returns>Scan result, <see cref="T:MvvmCross.Plugin.QrCode.ScanResult"/></returns>
         </member>
-        <member name="T:MvvmCross.Plugin.QrCode.PluginLoader">
-            <summary>
-            Plugin loader
-            </summary>
-        </member>
-        <member name="F:MvvmCross.Plugin.QrCode.PluginLoader.Instance">
-            <summary>
-            Plugin loader instance
-            </summary>
-        </member>
-        <member name="M:MvvmCross.Plugin.QrCode.PluginLoader.EnsureLoaded">
-            <summary>
-            Ensure the plugin is loaded
-            </summary>
-        </member>
         <member name="T:MvvmCross.Plugin.QrCode.ScanResult">
             <summary>
             Scan result

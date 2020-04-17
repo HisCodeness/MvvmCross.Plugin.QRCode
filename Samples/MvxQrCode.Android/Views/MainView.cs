@@ -1,7 +1,7 @@
 ﻿
 using Android.App;
 using Android.OS;
-using MvvmCross.Droid.Views;
+using MvvmCross.Platforms.Android.Views;
 using MvxQrCode.Core.ViewModels;
 
 namespace MvxQrCode.Android.Views
