@@ -8,6 +8,7 @@ namespace MvvmCross.Plugin.QrCode.iOS
     /// <summary>
     /// Mvx QR code plugin implementation
     /// </summary>
+    [Preserve(AllMembers = true)]
     public class MvxQrCode : BaseMvxQrCode
     {
         /// <summary>

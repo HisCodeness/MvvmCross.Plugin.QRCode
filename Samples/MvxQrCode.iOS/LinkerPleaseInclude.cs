@@ -1,8 +1,8 @@
 ﻿using System.Collections.Specialized;
 using System.Windows.Input;
 using Foundation;
-using MvvmCross.iOS.Views;
-using MvvmCross.Platform.IoC;
+using MvvmCross.IoC;
+using MvvmCross.Platforms.Ios.Views;
 using UIKit;
 
 namespace MvxQrCode.iOS

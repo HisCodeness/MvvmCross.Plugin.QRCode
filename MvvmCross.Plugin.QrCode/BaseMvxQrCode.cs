@@ -6,6 +6,7 @@ namespace MvvmCross.Plugin.QrCode
     /// <summary>
     /// Mvx QR code plugin base implementation
     /// </summary>
+    [Preserve(AllMembers = true)]
     public abstract class BaseMvxQrCode : IMvxQrCode
     {
         /// <summary>

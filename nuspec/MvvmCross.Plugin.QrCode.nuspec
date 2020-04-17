@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>Mvx.Plugin.QrCode</id>
-    <version>5.2.3-alpha</version>
+    <version>1.1.0-alpha</version>
     <title>MvvmCross.Plugin.QRCode</title>
     <authors>HisCodeness</authors>
     <owners>HisCodeness</owners>
@@ -11,32 +11,30 @@
     <projectUrl>https://github.com/HisCodeness/MvvmCross.Plugin.QRCode/</projectUrl>
     <description>MvvmCross plugin to scan QR Code or barcode</description>
     <summary>MvvmCross plugin to scan QR Code or barcode</summary>
-    <releaseNotes>First release, Android and iOS preview</releaseNotes>
+    <releaseNotes>Android and iOS ready, upgraded to Mvvmcross 6.4.2</releaseNotes>
     <copyright>Copyright 2020</copyright>
     <tags>mvvmcross plugin qrcode barcode xamarin android monodroid xamarin.android</tags>
     <dependencies>
       <group>
         <!-- Always include regardless of target framework -->
-        <dependency id="MvvmCross.Platform" version="5.2.3" />
+        <dependency id="MvvmCross" version="6.4.2" />
         <dependency id="ZXing.Net.Mobile" version="2.4.1" />
       </group>
     </dependencies>  
   </metadata>
   <files>     
     <!-- ALL -->
-    <file src="..\MvvmCross.Plugin.QrCode\bin\Release\netstandard1.1\MvvmCross.Plugin.QrCode.dll" target="lib\portable-net45+sl5+wp8+wpa81+win8+monoandroid+monotouch+netstandard1.0" />
-    <file src="..\MvvmCross.Plugin.QrCode\bin\Release\netstandard1.1\MvvmCross.Plugin.QrCode.xml" target="lib\portable-net45+sl5+wp8+wpa81+win8+monoandroid+monotouch+netstandard1.0" />
+    <file src="..\MvvmCross.Plugin.QrCode\bin\Release\netstandard2.0\MvvmCross.Plugin.QrCode.dll" target="lib\netstandard2.0" />
+    <file src="..\MvvmCross.Plugin.QrCode\bin\Release\netstandard2.0\MvvmCross.Plugin.QrCode.xml" target="lib\netstandard2.0" />
           		
     <!-- Android -->
-    <file src="..\MvvmCross.Plugin.QrCode\bin\Release\netstandard1.1\MvvmCross.Plugin.QrCode.dll" target="lib\monoandroid" />
-    <file src="..\MvvmCross.Plugin.QrCode\bin\Release\netstandard1.1\MvvmCross.Plugin.QrCode.xml" target="lib\monoandroid" />    
+    <file src="..\MvvmCross.Plugin.QrCode\bin\Release\netstandard2.0\MvvmCross.Plugin.QrCode.dll" target="lib\monoandroid" />
+    <file src="..\MvvmCross.Plugin.QrCode\bin\Release\netstandard2.0\MvvmCross.Plugin.QrCode.xml" target="lib\monoandroid" />    
     <file src="..\MvvmCross.Plugin.QrCode.Android\bin\Release\MvvmCross.Plugin.QrCode.Android.dll" target="lib\monoandroid" />
-		<file src="BootstrapContent\MvxQrCodePluginBootstrap.Android.cs.pp" target="content\monoandroid\Bootstrap\MvxQrCodePluginBootstrap.cs.pp" />
 		
     <!-- iOS -->
-     <file src="..\MvvmCross.Plugin.QrCode\bin\Release\netstandard1.1\MvvmCross.Plugin.QrCode.dll" target="lib\Xamarin.iOS10" /> 
-    <file src="..\MvvmCross.Plugin.QrCode\bin\Release\netstandard1.1\MvvmCross.Plugin.QrCode.xml" target="lib\Xamarin.iOS10" /> 
+     <file src="..\MvvmCross.Plugin.QrCode\bin\Release\netstandard2.0\MvvmCross.Plugin.QrCode.dll" target="lib\Xamarin.iOS10" /> 
+    <file src="..\MvvmCross.Plugin.QrCode\bin\Release\netstandard2.0\MvvmCross.Plugin.QrCode.xml" target="lib\Xamarin.iOS10" /> 
     <file src="..\MvvmCross.Plugin.QrCode.iOS\bin\Release\MvvmCross.Plugin.QrCode.iOS.dll" target="lib\Xamarin.iOS10" />
-		<file src="BootstrapContent\MvxQrCodePluginBootstrap.iOS.cs.pp" target="content\Xamarin.iOS10\Bootstrap\MvxQrCodePluginBootstrap.cs.pp" />
   </files>
 </package>

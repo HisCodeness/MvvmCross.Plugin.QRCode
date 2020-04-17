@@ -1,5 +1,5 @@
-using MvvmCross.Core.ViewModels;
-using MvvmCross.Platform.IoC;
+using MvvmCross.IoC;
+using MvvmCross.ViewModels;
 using MvxQrCode.Core.ViewModels;
 
 namespace MvxQrCode.Core
@@ -19,7 +19,7 @@ namespace MvxQrCode.Core
                 .AsInterfaces()
                 .RegisterAsLazySingleton();
 
-            RegisterNavigationServiceAppStart<MainViewModel>();
+            RegisterAppStart<MainViewModel>();
         }
     }
 }
