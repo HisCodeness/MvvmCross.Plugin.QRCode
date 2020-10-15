@@ -3762,8 +3762,6 @@ namespace MvxQrCode.Android
 			global::MvvmCross.Plugin.QrCode.Android.Resource.String.abc_shareactionprovider_share_with = global::MvxQrCode.Android.Resource.String.abc_shareactionprovider_share_with;
 			global::MvvmCross.Plugin.QrCode.Android.Resource.String.abc_shareactionprovider_share_with_application = global::MvxQrCode.Android.Resource.String.abc_shareactionprovider_share_with_application;
 			global::MvvmCross.Plugin.QrCode.Android.Resource.String.abc_toolbar_collapse_description = global::MvxQrCode.Android.Resource.String.abc_toolbar_collapse_description;
-			global::MvvmCross.Plugin.QrCode.Android.Resource.String.app_name = global::MvxQrCode.Android.Resource.String.app_name;
-			global::MvvmCross.Plugin.QrCode.Android.Resource.String.hello = global::MvxQrCode.Android.Resource.String.hello;
 			global::MvvmCross.Plugin.QrCode.Android.Resource.String.search_menu_title = global::MvxQrCode.Android.Resource.String.search_menu_title;
 			global::MvvmCross.Plugin.QrCode.Android.Resource.String.status_bar_notification_info_overflow = global::MvxQrCode.Android.Resource.String.status_bar_notification_info_overflow;
 			global::MvvmCross.Plugin.QrCode.Android.Resource.Style.AlertDialog_AppCompat = global::MvxQrCode.Android.Resource.Style.AlertDialog_AppCompat;
