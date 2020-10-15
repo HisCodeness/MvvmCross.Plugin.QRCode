@@ -13,7 +13,7 @@
     <DocumentationFile>D:\Sources\GIT\MvxQrCode\MvvmCross.Plugin.QrCode\MvvmCross.Plugin.QrCode.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="MvvmCross" Version="6.4.2" />
+    <PackageReference Include="MvvmCross" Version="7.0.1" />
     <PackageReference Include="ZXing.Net.Mobile" Version="2.4.1" />
   </ItemGroup>
 </Project>
